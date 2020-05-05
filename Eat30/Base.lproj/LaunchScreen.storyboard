@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +12,44 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Eat 30" translatesAutoresizingMaskIntoConstraints="NO" id="prH-a8-xh0">
+                                <rect key="frame" x="100" y="200" width="214" height="193"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nyob Zoo Xyoo Tshiab!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpl-67-ubU">
+                                <rect key="frame" x="25" y="483" width="364" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="6F9-K8-R4G"/>
+                                    <constraint firstAttribute="width" constant="364" id="oha-b4-i3V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tpl-67-ubU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="30" id="0Ks-Mx-VXX"/>
+                            <constraint firstItem="tpl-67-ubU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="5a8-9z-POB"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tpl-67-ubU" secondAttribute="trailing" id="LNr-eL-ftj"/>
+                            <constraint firstAttribute="trailing" secondItem="prH-a8-xh0" secondAttribute="trailing" constant="100" id="OzI-ch-b26"/>
+                            <constraint firstItem="prH-a8-xh0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-60" id="P8l-CA-HLf"/>
+                            <constraint firstItem="prH-a8-xh0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="100" id="Peq-iS-YQV"/>
+                            <constraint firstItem="prH-a8-xh0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="eJ0-Gl-11B"/>
+                            <constraint firstItem="prH-a8-xh0" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="200" id="ihf-m0-K37"/>
+                            <constraint firstItem="tpl-67-ubU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jX7-oe-VOC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Eat 30" width="500" height="500"/>
+    </resources>
 </document>

@@ -1,24 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3vr-Ct-be2">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="M2c-ip-DNK">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tabBarController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="3vr-Ct-be2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="C4S-96-ObX"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="2Yt-3p-42Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Hnw-vs-3YN" kind="relationship" relationship="viewControllers" id="Z1p-F7-vY8"/>
+                        <segue destination="Iv4-UY-Pyb" kind="relationship" relationship="viewControllers" id="S8l-eh-MEQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TXd-tK-bjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-279" y="156"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="j5A-sy-hOL">
+            <objects>
+                <tableViewController id="Hnw-vs-3YN" customClass="EventsTableViewController" customModule="Eat30" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XAu-BM-3cJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="What event would you like to attend?" id="7dZ-s0-7fT">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCell" id="rFL-Dl-UCB">
+                                <rect key="frame" x="0.0" y="72" width="375" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rFL-Dl-UCB" id="OWf-dP-mzW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Hnw-vs-3YN" id="Yyh-mM-tcF"/>
+                            <outlet property="delegate" destination="Hnw-vs-3YN" id="F1f-10-bSY"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Events" image="mappin.and.ellipse" catalog="system" landscapeImage="mappin.and.ellipse" largeContentSizeImage="mappin.and.ellipse" id="rqf-oG-45c"/>
+                    <navigationItem key="navigationItem" id="xJH-56-KsV"/>
+                    <connections>
+                        <outlet property="searchBar" destination="7dZ-s0-7fT" id="BTu-0r-kQn"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nuM-o0-WpJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-676" y="876"/>
+        </scene>
+        <!--Vendors-->
+        <scene sceneID="k0J-wV-qWb">
+            <objects>
+                <viewController id="Dqr-gq-Yl7" customClass="VendorsVC" customModule="Eat30" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DZC-YC-Z8F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mTd-v6-ipd">
+                                <rect key="frame" x="0.0" y="100" width="375" height="678"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="vendorCell" id="4xh-Uc-6dl">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4xh-Uc-6dl" id="A7G-YD-q9G">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" placeholder="Who would you like to support?" translatesAutoresizingMaskIntoConstraints="NO" id="rFx-Ay-knY">
+                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Dqr-gq-Yl7" id="rc2-e9-HIF"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rFx-Ay-knY" firstAttribute="top" secondItem="z4c-H3-qnB" secondAttribute="top" id="1Ka-Aq-9aW"/>
+                            <constraint firstItem="mTd-v6-ipd" firstAttribute="top" secondItem="rFx-Ay-knY" secondAttribute="bottom" id="Cio-9c-ibD"/>
+                            <constraint firstItem="z4c-H3-qnB" firstAttribute="trailing" secondItem="mTd-v6-ipd" secondAttribute="trailing" id="Hws-sh-XRX"/>
+                            <constraint firstItem="mTd-v6-ipd" firstAttribute="leading" secondItem="z4c-H3-qnB" secondAttribute="leading" id="Yht-ev-ayA"/>
+                            <constraint firstItem="z4c-H3-qnB" firstAttribute="bottom" secondItem="mTd-v6-ipd" secondAttribute="bottom" id="aEH-pg-PvU"/>
+                            <constraint firstItem="rFx-Ay-knY" firstAttribute="leading" secondItem="z4c-H3-qnB" secondAttribute="leading" id="dpp-Fl-LJb"/>
+                            <constraint firstItem="rFx-Ay-knY" firstAttribute="trailing" secondItem="z4c-H3-qnB" secondAttribute="trailing" id="kkl-A7-FbR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z4c-H3-qnB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Vendors" image="bag" catalog="system" landscapeImage="bag" largeContentSizeImage="bag" id="0bu-zz-kHX"/>
+                    <connections>
+                        <outlet property="tableView" destination="mTd-v6-ipd" id="ZdJ-1x-EHg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dIF-gp-fOr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2594" y="-140"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="hgF-ug-Z3K">
+            <objects>
+                <viewController id="5Gd-np-l0T" customClass="EventsTableViewController" customModule="Eat30" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tDp-Vs-JSl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W3f-yk-4KJ">
+                                <rect key="frame" x="0.0" y="100" width="375" height="678"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="eventCell" id="B3s-es-apg">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B3s-es-apg" id="ydB-Yv-2WK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" placeholder="What event would you like to attend?" translatesAutoresizingMaskIntoConstraints="NO" id="gJt-Jr-Ov4">
+                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="5Gd-np-l0T" id="1aU-f0-ZYm"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gJt-Jr-Ov4" firstAttribute="trailing" secondItem="33i-fa-Soo" secondAttribute="trailing" id="1z8-Bf-2az"/>
+                            <constraint firstItem="W3f-yk-4KJ" firstAttribute="top" secondItem="gJt-Jr-Ov4" secondAttribute="bottom" id="7Ba-ze-qns"/>
+                            <constraint firstItem="gJt-Jr-Ov4" firstAttribute="top" secondItem="33i-fa-Soo" secondAttribute="top" id="Pg7-vn-LkO"/>
+                            <constraint firstItem="W3f-yk-4KJ" firstAttribute="leading" secondItem="33i-fa-Soo" secondAttribute="leading" id="k1H-TM-crY"/>
+                            <constraint firstItem="gJt-Jr-Ov4" firstAttribute="leading" secondItem="33i-fa-Soo" secondAttribute="leading" id="lJw-G2-KQv"/>
+                            <constraint firstItem="gJt-Jr-Ov4" firstAttribute="centerX" secondItem="tDp-Vs-JSl" secondAttribute="centerX" id="rCo-BY-yvm"/>
+                            <constraint firstItem="33i-fa-Soo" firstAttribute="bottom" secondItem="W3f-yk-4KJ" secondAttribute="bottom" id="sjt-G0-SBc"/>
+                            <constraint firstItem="33i-fa-Soo" firstAttribute="trailing" secondItem="W3f-yk-4KJ" secondAttribute="trailing" id="wOh-dG-jGn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="33i-fa-Soo"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Events" image="mappin.and.ellipse" catalog="system" landscapeImage="mappin.and.ellipse" largeContentSizeImage="mappin.and.ellipse" id="uLI-TK-iEf"/>
+                    <connections>
+                        <outlet property="tableView" destination="W3f-yk-4KJ" id="elx-vS-IiG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KUf-pQ-QhH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2594" y="556"/>
+        </scene>
+        <!--Vendors-->
+        <scene sceneID="7i7-gb-JFd">
+            <objects>
+                <tableViewController id="Iv4-UY-Pyb" customClass="VendorsTableViewController" customModule="Eat30" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GQm-fY-rIS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Who would you like to support?" id="J0T-QV-ibd">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="vendorCell" id="0mc-kp-kWo">
+                                <rect key="frame" x="0.0" y="72" width="375" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0mc-kp-kWo" id="zWi-1C-u3j">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Iv4-UY-Pyb" id="tiJ-ql-0zP"/>
+                            <outlet property="delegate" destination="Iv4-UY-Pyb" id="pAV-HF-Rot"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Vendors" image="bag" catalog="system" landscapeImage="bag" largeContentSizeImage="bag" id="SQI-HQ-LSd"/>
+                    <navigationItem key="navigationItem" id="r3G-Kt-mA9"/>
+                    <connections>
+                        <outlet property="searchBar" destination="J0T-QV-ibd" id="8sT-bC-VUf"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xae-dQ-TfX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="876"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+    </resources>
 </document>

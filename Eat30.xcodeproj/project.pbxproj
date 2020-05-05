@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58859DCA2446657F00567CF4 /* Eat 30.png in Resources */ = {isa = PBXBuildFile; fileRef = 58859DC92446657F00567CF4 /* Eat 30.png */; };
+		58859DCC2446720D00567CF4 /* EventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859DCB2446720D00567CF4 /* EventsVC.swift */; };
+		58859DCE2446722400567CF4 /* VendorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58859DCD2446722400567CF4 /* VendorsVC.swift */; };
+		588F5D3D245B896F003D47CC /* VendorDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F5D3C245B896F003D47CC /* VendorDataLoader.swift */; };
+		588F5D3F245B89E8003D47CC /* VendorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F5D3E245B89E8003D47CC /* VendorsTableViewController.swift */; };
+		58BEA44D245B7BFB0073FD21 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 58BEA44B245B7BFA0073FD21 /* events.json */; };
+		58BEA44E245B7BFB0073FD21 /* vendors.json in Resources */ = {isa = PBXBuildFile; fileRef = 58BEA44C245B7BFB0073FD21 /* vendors.json */; };
+		58BEA451245B7C370073FD21 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BEA450245B7C370073FD21 /* EventData.swift */; };
+		58BEA453245B7D1C0073FD21 /* EventDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BEA452245B7D1C0073FD21 /* EventDataLoader.swift */; };
+		58BEA455245B823D0073FD21 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BEA454245B823D0073FD21 /* EventsTableViewController.swift */; };
+		58BEA459245B87320073FD21 /* VendorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BEA458245B87320073FD21 /* VendorData.swift */; };
+		58F50EAB24492FC200AF504C /* Screen Shot 2020-04-16 at 5.25.15 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 58F50EAA24492FC100AF504C /* Screen Shot 2020-04-16 at 5.25.15 PM.png */; };
 		58F5940A2440155A001B3589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F594092440155A001B3589 /* AppDelegate.swift */; };
 		58F5940C2440155A001B3589 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F5940B2440155A001B3589 /* SceneDelegate.swift */; };
 		58F5940E2440155A001B3589 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F5940D2440155A001B3589 /* ViewController.swift */; };
@@ -16,6 +28,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58859DC92446657F00567CF4 /* Eat 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Eat 30.png"; sourceTree = "<group>"; };
+		58859DCB2446720D00567CF4 /* EventsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsVC.swift; sourceTree = "<group>"; };
+		58859DCD2446722400567CF4 /* VendorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorsVC.swift; sourceTree = "<group>"; };
+		588F5D3C245B896F003D47CC /* VendorDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorDataLoader.swift; sourceTree = "<group>"; };
+		588F5D3E245B89E8003D47CC /* VendorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorsTableViewController.swift; sourceTree = "<group>"; };
+		58BEA44B245B7BFA0073FD21 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		58BEA44C245B7BFB0073FD21 /* vendors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vendors.json; sourceTree = "<group>"; };
+		58BEA450245B7C370073FD21 /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
+		58BEA452245B7D1C0073FD21 /* EventDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDataLoader.swift; sourceTree = "<group>"; };
+		58BEA454245B823D0073FD21 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		58BEA458245B87320073FD21 /* VendorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorData.swift; sourceTree = "<group>"; };
+		58F50EAA24492FC100AF504C /* Screen Shot 2020-04-16 at 5.25.15 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-04-16 at 5.25.15 PM.png"; sourceTree = "<group>"; };
 		58F594062440155A001B3589 /* Eat30.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eat30.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F594092440155A001B3589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58F5940B2440155A001B3589 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58BEA44A245B57540073FD21 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				58F5940D2440155A001B3589 /* ViewController.swift */,
+				58BEA454245B823D0073FD21 /* EventsTableViewController.swift */,
+				588F5D3E245B89E8003D47CC /* VendorsTableViewController.swift */,
+				58859DCB2446720D00567CF4 /* EventsVC.swift */,
+				58859DCD2446722400567CF4 /* VendorsVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		58BEA44F245B7BFF0073FD21 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				58BEA44B245B7BFA0073FD21 /* events.json */,
+				58BEA450245B7C370073FD21 /* EventData.swift */,
+				58BEA458245B87320073FD21 /* VendorData.swift */,
+				58BEA452245B7D1C0073FD21 /* EventDataLoader.swift */,
+				588F5D3C245B896F003D47CC /* VendorDataLoader.swift */,
+				58BEA44C245B7BFB0073FD21 /* vendors.json */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		58F593FD2440155A001B3589 = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +105,14 @@
 		58F594082440155A001B3589 /* Eat30 */ = {
 			isa = PBXGroup;
 			children = (
+				58BEA44F245B7BFF0073FD21 /* data */,
+				58BEA44A245B57540073FD21 /* View Controllers */,
 				58F594092440155A001B3589 /* AppDelegate.swift */,
 				58F5940B2440155A001B3589 /* SceneDelegate.swift */,
-				58F5940D2440155A001B3589 /* ViewController.swift */,
 				58F5940F2440155A001B3589 /* Main.storyboard */,
 				58F594122440155E001B3589 /* Assets.xcassets */,
+				58F50EAA24492FC100AF504C /* Screen Shot 2020-04-16 at 5.25.15 PM.png */,
+				58859DC92446657F00567CF4 /* Eat 30.png */,
 				58F594142440155E001B3589 /* LaunchScreen.storyboard */,
 				58F594172440155E001B3589 /* Info.plist */,
 			);
@@ -127,7 +179,11 @@
 			files = (
 				58F594162440155E001B3589 /* LaunchScreen.storyboard in Resources */,
 				58F594132440155E001B3589 /* Assets.xcassets in Resources */,
+				58BEA44D245B7BFB0073FD21 /* events.json in Resources */,
+				58859DCA2446657F00567CF4 /* Eat 30.png in Resources */,
+				58F50EAB24492FC200AF504C /* Screen Shot 2020-04-16 at 5.25.15 PM.png in Resources */,
 				58F594112440155A001B3589 /* Main.storyboard in Resources */,
+				58BEA44E245B7BFB0073FD21 /* vendors.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +194,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58859DCC2446720D00567CF4 /* EventsVC.swift in Sources */,
 				58F5940E2440155A001B3589 /* ViewController.swift in Sources */,
+				588F5D3D245B896F003D47CC /* VendorDataLoader.swift in Sources */,
+				58BEA453245B7D1C0073FD21 /* EventDataLoader.swift in Sources */,
+				58BEA451245B7C370073FD21 /* EventData.swift in Sources */,
+				58859DCE2446722400567CF4 /* VendorsVC.swift in Sources */,
+				588F5D3F245B89E8003D47CC /* VendorsTableViewController.swift in Sources */,
 				58F5940A2440155A001B3589 /* AppDelegate.swift in Sources */,
+				58BEA459245B87320073FD21 /* VendorData.swift in Sources */,
+				58BEA455245B823D0073FD21 /* EventsTableViewController.swift in Sources */,
 				58F5940C2440155A001B3589 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
